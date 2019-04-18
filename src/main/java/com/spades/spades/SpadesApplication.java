@@ -48,7 +48,7 @@ public class SpadesApplication {
             Connector connector =
                     new Connector(CONNECTOR_PROTOCOL);
             connector.setScheme(CONNECTOR_SCHEME);
-            connector.setSecure(false);
+            connector.setSecure(true);
             connector.setPort(8000);
             return connector;
         }
