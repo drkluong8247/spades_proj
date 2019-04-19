@@ -17,6 +17,7 @@ public class SpadesApplication {
         SpringApplication.run(SpadesApplication.class, args);
     }
 
+    /*
     @Configuration
     public class HttpsRedirectConf {
         private final static String SECURITY_USER_CONSTRAINT = "CONFIDENTIAL";
@@ -53,4 +54,5 @@ public class SpadesApplication {
             return connector;
         }
     }
+    */
 }
