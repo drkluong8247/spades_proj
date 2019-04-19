@@ -50,7 +50,7 @@ public class SpadesApplication {
             connector.setScheme(CONNECTOR_SCHEME);
             connector.setSecure(false);
             connector.setPort(8000);
-            connector.setRedirectPort(8000);
+            connector.setRedirectPort(8443);
             return connector;
         }
     }
