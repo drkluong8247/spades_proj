@@ -22,7 +22,7 @@ public class SpadesApplication {
         private final static String SECURITY_USER_CONSTRAINT = "CONFIDENTIAL";
         private final static String REDIRECT_PATTERN = "/*";
         private final static String CONNECTOR_PROTOCOL = "org.apache.coyote.http11.Http11NioProtocol";
-        private final static String CONNECTOR_SCHEME = "https";
+        private final static String CONNECTOR_SCHEME = "http";
 
 
         @Bean
@@ -48,8 +48,9 @@ public class SpadesApplication {
             Connector connector =
                     new Connector(CONNECTOR_PROTOCOL);
             connector.setScheme(CONNECTOR_SCHEME);
-            connector.setSecure(true);
+            connector.setSecure(false);
             connector.setPort(8000);
+            connector.setRedirectPort(8000);
             return connector;
         }
     }
