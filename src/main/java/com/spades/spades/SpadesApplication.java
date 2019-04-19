@@ -17,13 +17,12 @@ public class SpadesApplication {
         SpringApplication.run(SpadesApplication.class, args);
     }
 
-    /*
     @Configuration
     public class HttpsRedirectConf {
         private final static String SECURITY_USER_CONSTRAINT = "CONFIDENTIAL";
         private final static String REDIRECT_PATTERN = "/*";
         private final static String CONNECTOR_PROTOCOL = "org.apache.coyote.http11.Http11NioProtocol";
-        private final static String CONNECTOR_SCHEME = "http";
+        private final static String CONNECTOR_SCHEME = "https";
 
 
         @Bean
@@ -54,5 +53,4 @@ public class SpadesApplication {
             return connector;
         }
     }
-    */
 }
